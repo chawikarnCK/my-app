@@ -5,7 +5,7 @@ https://gorest.co.in/public/v2
 
 Getting Started
 To get started with this project, clone the repository to your local machine 
-import it into IDE intellij as a Maven project.
+import it into IDE  as a Maven project.
 
 Prerequisites
 To run this project, you'll need:
@@ -35,4 +35,4 @@ Testcase Description
 4. checkPostAPI : Check Post request success
 5. checkPutUser : Check update data (status field)
 6. checkDeleteUser : Check Delete request success  
-7. 
+
