@@ -24,7 +24,7 @@ Running the Tests
 To run the tests, you can use the following command in your terminal:
 
 cd /path/to/app
-- mvn clean install 
+
 - mvn test
 
 This will run the test classes and output the results in the console.
