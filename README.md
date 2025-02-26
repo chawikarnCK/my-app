@@ -23,6 +23,7 @@ Import the project into your preferred IDE as a Maven project.
 Running the Tests
 To run the tests, you can use the following command in your terminal:
 
+cd /path/to/app
 - mvn clean install 
 - mvn test
 
