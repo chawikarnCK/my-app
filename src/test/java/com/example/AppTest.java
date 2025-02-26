@@ -68,9 +68,9 @@ public class AppTest {
         System.out.println("Response Get: " + response.log().body());
     }
 
-
     @Test
     public void checkPostAPI() {
+
 
         int userid = 0;
         try {
@@ -96,14 +96,15 @@ public class AppTest {
                     .then()
                     .statusCode(201) // Expect success response
                     .extract().response();
-
             userid = response.jsonPath().getInt("id");
+
             System.out.println("----------Post request successful---------");
             System.out.println("POST :New User created with ID: " + userid);
-            System.out.println("Response Post: " + response.getBody().asString());
+            response.getBody().prettyPrint();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
     }
 

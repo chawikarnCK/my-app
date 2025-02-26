@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="6.793" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="4.247" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TH"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227002214688_3.jar /Users/chawikarn/test-maven/test-maven/my-app/target/surefire 2025-02-27T00-22-14_496-jvmRun1 surefire-20250227002214688_1tmp surefire_0-20250227002214688_2tmp"/>
+    <property name="sun.java.command" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227004050255_3.jar /Users/chawikarn/test-maven/test-maven/my-app/target/surefire 2025-02-27T00-40-50_207-jvmRun1 surefire-20250227004050255_1tmp surefire_0-20250227004050255_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/test-classes:/Users/chawikarn/test-maven/test-maven/my-app/target/classes:/Users/chawikarn/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/chawikarn/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/chawikarn/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/chawikarn/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/chawikarn/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/chawikarn/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/chawikarn/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/chawikarn/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/chawikarn/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/chawikarn/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/Users/chawikarn/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/chawikarn/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/chawikarn/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:/Users/chawikarn/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/Users/chawikarn/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/chawikarn/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227002214688_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227004050255_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -59,106 +59,113 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="checkContentType" classname="com.example.AppTest" time="2.683"/>
-  <testcase name="checkDeleteUser" classname="com.example.AppTest" time="1.996">
+  <testcase name="checkContentType" classname="com.example.AppTest" time="1.122">
+    <system-out><![CDATA[Checked  Content-Type
+]]></system-out>
+  </testcase>
+  <testcase name="checkDeleteUser" classname="com.example.AppTest" time="1.521">
     <system-out><![CDATA[----------Delete request successful---------
-Deleted ID : 7725592
+Deleted ID : 7725655
 ]]></system-out>
   </testcase>
-  <testcase name="checkPostAPI" classname="com.example.AppTest" time="0.287">
+  <testcase name="checkPostAPI" classname="com.example.AppTest" time="0.373">
     <system-out><![CDATA[----------Post request successful---------
-POST : User created with ID: 7725593
-Response POST: {"id":7725593,"name":"Jay Embranthiri","email":"TestEmail163@example.com","gender":"female","status":"active"}
+POST :New User created with ID: 7725656
+{
+    "id": 7725656,
+    "name": "Jay Embranthiri",
+    "email": "TestEmail13@example.com",
+    "gender": "female",
+    "status": "active"
+}
 ]]></system-out>
   </testcase>
-  <testcase name="checkPutUser" classname="com.example.AppTest" time="0.473">
+  <testcase name="checkPutUser" classname="com.example.AppTest" time="0.432">
     <system-out><![CDATA[----------PUT request successful---------
+ID : 7725317
 PUT : Status Changed :  inactive
 ]]></system-out>
   </testcase>
-  <testcase name="checkGetUser" classname="com.example.AppTest" time="0.489">
+  <testcase name="checkGetUser" classname="com.example.AppTest" time="0.424">
     <system-out><![CDATA[----------GET request successful---------
+Checked Request Not null
 [
     {
-        "id": 7725593,
+        "id": 7725656,
         "name": "Jay Embranthiri",
-        "email": "TestEmail163@example.com",
+        "email": "TestEmail13@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725573,
+        "id": 7725653,
         "name": "Jay Embranthiri",
-        "email": "TestEmail154@example.com",
+        "email": "TestEmail179@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725570,
+        "id": 7725649,
         "name": "Jay Embranthiri",
-        "email": "TestEmail116@example.com",
+        "email": "TestEmail147@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725479,
+        "id": 7725644,
         "name": "Jay Embranthiri",
-        "email": "TestEmail16@example.com",
+        "email": "TestEmail119@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725453,
+        "id": 7725641,
         "name": "Jay Embranthiri",
-        "email": "TestEmail152@example.com",
+        "email": "TestEmail11@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725450,
+        "id": 7725640,
         "name": "Jay Embranthiri",
-        "email": "TestEmail194@example.com",
+        "email": "TestEmail165@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725317,
+        "id": 7725633,
         "name": "Jay Embranthiri",
-        "email": "TestEmail136@example.com",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 7725425,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail195@example.com",
+        "email": "TestEmail180@example.com",
         "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725402,
-        "name": "Som Kaul",
-        "email": "kaul_som@stiedemann.test",
-        "gender": "male",
+        "id": 7725632,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail144@example.com",
+        "gender": "female",
         "status": "active"
     },
     {
-        "id": 7725401,
-        "name": "Amb. Kumari Saini",
-        "email": "saini_amb_kumari@sawayn-zboncak.test",
-        "gender": "male",
-        "status": "inactive"
+        "id": 7725623,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail114@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7725620,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail141@example.com",
+        "gender": "female",
+        "status": "active"
     }
 ]
-Response Get: io.restassured.internal.ValidatableResponseImpl@39549f33
+Response Get: io.restassured.internal.ValidatableResponseImpl@7f977fba
 ]]></system-out>
   </testcase>
-  <testcase name="checkGetUserNotNull" classname="com.example.AppTest" time="0.339">
-    <system-out><![CDATA[Checked Request Not null
-]]></system-out>
-  </testcase>
-  <testcase name="checkGetStatusCode" classname="com.example.AppTest" time="0.509">
-    <system-out><![CDATA[Request successful
+  <testcase name="checkGetStatusCode" classname="com.example.AppTest" time="0.367">
+    <system-out><![CDATA[Request successful Status 200
 ]]></system-out>
   </testcase>
 </testsuite>
