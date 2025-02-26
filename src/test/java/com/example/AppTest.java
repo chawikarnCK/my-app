@@ -78,7 +78,7 @@ public class AppTest {
             ObjectNode jsonObject = (ObjectNode) objectMapper.readTree(jsonBody);
 
             // Generate a random number
-            int randomNum = new Random().nextInt(100);
+            int randomNum = new Random().nextInt(1000);
 
             // Modify JSON mail dynamically because email can not be duplicate
             jsonObject.put("email", "TestEmail1" + randomNum + "@example.com");
@@ -151,34 +151,31 @@ public class AppTest {
     public int CreateRandomUserId() throws IOException {
 
         int userid = 0;
+        // Read JSON from file
+        String jsonBody = new String(Files.readAllBytes(Paths.get("src/test/java/datamodel/PostBody.json")));
 
-            // Read JSON from file
-            String jsonBody = new String(Files.readAllBytes(Paths.get("src/test/java/datamodel/PostBody.json")));
+        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectNode jsonObject = (ObjectNode) objectMapper.readTree(jsonBody);
 
-            ObjectMapper objectMapper = new ObjectMapper();
-            ObjectNode jsonObject = (ObjectNode) objectMapper.readTree(jsonBody);
+        // Generate a random number
+        int randomNum = new Random().nextInt(1000);
 
-            // Generate a random number
-            int randomNum = new Random().nextInt(100);
+        // Modify JSON mail dynamically because email can not be duplicate
+        jsonObject.put("email", "TestEmail1" + randomNum + "@example.com");
+        String updatedJsonBody = objectMapper.writeValueAsString(jsonObject);
 
-            // Modify JSON mail dynamically because email can not be duplicate
-            jsonObject.put("email", "TestEmail1" + randomNum + "@example.com");
-            String updatedJsonBody = objectMapper.writeValueAsString(jsonObject);
-
-            var response = given()
-                    .header("Accept", "application/json")
-                    .contentType(ContentType.JSON)
-                    .auth().oauth2(accessToken)
-                    .body(updatedJsonBody)
-                    .when()
-                    .post(baseURI + "/users")
-                    .then()
-                    .statusCode(201)// Expect success response
-                    .extract().response();
-            userid = response.jsonPath().getInt("id");
-
+        var response = given()
+                .header("Accept", "application/json")
+                .contentType(ContentType.JSON)
+                .auth().oauth2(accessToken)
+                .body(updatedJsonBody)
+                .when()
+                .post(baseURI + "/users")
+                .then()
+                .statusCode(201) // Expect success response
+                .extract().response();
+        userid = response.jsonPath().getInt("id");
         return userid;
-
     }
 }
 

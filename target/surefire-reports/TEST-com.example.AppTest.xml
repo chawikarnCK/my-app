@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="4.057" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="4.184" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TH"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227022113099_3.jar /Users/chawikarn/test-maven/test-maven/my-app/target/surefire 2025-02-27T02-21-13_051-jvmRun1 surefire-20250227022113099_1tmp surefire_0-20250227022113099_2tmp"/>
+    <property name="sun.java.command" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227023738820_3.jar /Users/chawikarn/test-maven/test-maven/my-app/target/surefire 2025-02-27T02-37-38_770-jvmRun1 surefire-20250227023738820_1tmp surefire_0-20250227023738820_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/test-classes:/Users/chawikarn/test-maven/test-maven/my-app/target/classes:/Users/chawikarn/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/chawikarn/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/chawikarn/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/chawikarn/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/chawikarn/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/chawikarn/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/chawikarn/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/chawikarn/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/chawikarn/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/chawikarn/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/chawikarn/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/chawikarn/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/Users/chawikarn/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.0/junit-jupiter-api-5.12.0.jar:/Users/chawikarn/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/chawikarn/.m2/repository/org/junit/platform/junit-platform-commons/1.12.0/junit-platform-commons-1.12.0.jar:/Users/chawikarn/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/Users/chawikarn/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/Users/chawikarn/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/chawikarn/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227022113099_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/chawikarn/test-maven/test-maven/my-app/target/surefire/surefirebooter-20250227023738820_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -59,37 +59,93 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="checkContentType" classname="com.example.AppTest" time="1.017">
+  <testcase name="checkContentType" classname="com.example.AppTest" time="1.118">
     <system-out><![CDATA[Checked  Content-Type
 ]]></system-out>
   </testcase>
-  <testcase name="checkDeleteUser" classname="com.example.AppTest" time="1.513">
+  <testcase name="checkDeleteUser" classname="com.example.AppTest" time="1.481">
     <system-out><![CDATA[----------Delete request successful---------
-Deleted ID : 7726148
+Deleted ID : 7726193
 ]]></system-out>
   </testcase>
-  <testcase name="checkPostAPI" classname="com.example.AppTest" time="0.409">
+  <testcase name="checkPostAPI" classname="com.example.AppTest" time="0.485">
     <system-out><![CDATA[----------Post request successful---------
-POST :New User created with ID: 7726149
+POST :New User created with ID: 7726194
 {
-    "id": 7726149,
+    "id": 7726194,
     "name": "Jay Embranthiri",
-    "email": "TestEmail182@example.com",
+    "email": "TestEmail1331@example.com",
     "gender": "female",
     "status": "active"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="checkPutUser" classname="com.example.AppTest" time="0.245">
+  <testcase name="checkPutUser" classname="com.example.AppTest" time="0.402">
     <system-out><![CDATA[----------PUT request successful---------
 ID : 7725317
 PUT : Status Changed :  inactive
 ]]></system-out>
   </testcase>
-  <testcase name="checkGetUser" classname="com.example.AppTest" time="0.399">
+  <testcase name="checkGetUser" classname="com.example.AppTest" time="0.301">
     <system-out><![CDATA[----------GET request successful---------
 Checked Request Not null
 [
+    {
+        "id": 7726194,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail1331@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726191,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail1702@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726188,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail1816@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726175,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail1410@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726174,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail1126@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726172,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail17@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726158,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail127@example.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 7726157,
+        "name": "Jay Embranthiri",
+        "email": "TestEmail134@example.com",
+        "gender": "female",
+        "status": "active"
+    },
     {
         "id": 7726149,
         "name": "Jay Embranthiri",
@@ -103,68 +159,12 @@ Checked Request Not null
         "email": "TestEmail169@example.com",
         "gender": "female",
         "status": "active"
-    },
-    {
-        "id": 7726142,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail153@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7726141,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail172@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7726137,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail143@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7726133,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail181@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7725783,
-        "name": "Jay Embranthiri",
-        "email": "embrant1@mail.com",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 7726106,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail121@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7726103,
-        "name": "Jay Embranthiri",
-        "email": "TestEmail198@example.com",
-        "gender": "female",
-        "status": "active"
-    },
-    {
-        "id": 7726094,
-        "name": "Giri Jha",
-        "email": "jha_giri@harber-predovic.test",
-        "gender": "female",
-        "status": "active"
     }
 ]
-Response Get: io.restassured.internal.ValidatableResponseImpl@76a7fcbd
+Response Get: io.restassured.internal.ValidatableResponseImpl@433ea2ac
 ]]></system-out>
   </testcase>
-  <testcase name="checkGetStatusCode" classname="com.example.AppTest" time="0.466">
+  <testcase name="checkGetStatusCode" classname="com.example.AppTest" time="0.389">
     <system-out><![CDATA[Request successful Status 200
 ]]></system-out>
   </testcase>
