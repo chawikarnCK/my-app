@@ -18,9 +18,9 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
 
-public class App {
+public class AppTest {
 
-    private static final Log log = LogFactory.getLog(App.class);
+    private static final Log log = LogFactory.getLog(AppTest.class);
     String baseURI = "https://gorest.co.in/public/v2";
     String accessToken = "989bd3ee9e13f8a3f3c6146f41fa591131d5fd4b5f52f526b25b627d886ada8c";
 
@@ -35,25 +35,10 @@ public class App {
         int statusCode = response.extract().statusCode();
 
         if (statusCode == 200) {
-            System.out.println("Request successful");
+            System.out.println("Request successful Status 200");
         } else {
             System.out.println("request failed");
         }
-    }
-
-    @Test
-    public void checkGetUserNotNull() {
-        User users = new User();
-        var response = given().auth().oauth2(accessToken)
-                .when().get(baseURI + "/users")
-                .then()
-                .statusCode(200)
-                .body("name", everyItem(notNullValue()))
-                .body("email", everyItem(notNullValue()))
-                .body("gender", everyItem(notNullValue()))
-                .body("status", everyItem(notNullValue()));
-        System.out.println("Checked Request Not null");
-
     }
 
     @Test
@@ -61,7 +46,8 @@ public class App {
         var response = given().auth().oauth2(accessToken)
                 .when().get(baseURI + "/users")
                 .then()
-                .contentType("application/json");  // Check if Content-Type
+                .contentType("application/json");
+        System.out.println("Checked  Content-Type");// Content-Type
     }
 
 
@@ -71,9 +57,15 @@ public class App {
                 .when()
                 .get(baseURI + "/users")
                 .then()
-                .statusCode(200);
-            System.out.println("Get request  successful");
-             response.log().body();
+                .statusCode(200)
+                .body("name", everyItem(notNullValue()))
+                .body("email", everyItem(notNullValue()))
+                .body("gender", everyItem(notNullValue()))
+                .body("status", everyItem(notNullValue()));
+        System.out.println("----------GET request successful---------");
+
+        System.out.println("Checked Request Not null");
+        System.out.println("Response Get: " + response.log().body());
     }
 
 
@@ -106,8 +98,9 @@ public class App {
                     .extract().response();
 
             userid = response.jsonPath().getInt("id");
-            System.out.println("POST : User created with ID: " + userid);
-            System.out.println("Response: " + response.asString());
+            System.out.println("----------Post request successful---------");
+            System.out.println("POST :New User created with ID: " + userid);
+            System.out.println("Response Post: " + response.getBody().asString());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -130,7 +123,10 @@ public class App {
                 .then()
                 .statusCode(200)
                 .body("status", equalTo("inactive"));
-             System.out.println("PUT : Status Changed :  inactive");
+        System.out.println("----------PUT request successful---------");
+        System.out.println("ID : 7725317");
+        System.out.println("PUT : Status Changed :  inactive");
+
     }
 
     @Test
@@ -143,7 +139,7 @@ public class App {
                 .delete(baseURI + "/users/" + user)
                 .then()
                 .statusCode(204);
-        System.out.println("Deleted ID : " + user);
+
 
         /// Check get id
         var Newresponse = given()
@@ -153,12 +149,9 @@ public class App {
                 .get(baseURI + "/users/" + user)
                 .then()
                 .statusCode(404);
-
+        System.out.println("----------Delete request successful---------");
+        System.out.println("Deleted ID : " + user);
     }
-
-
-
-
 
     public int CreateRandomUserId() {
 
