@@ -69,11 +69,8 @@ public class AppTest {
     }
 
     @Test
-    public void checkPostAPI() {
-
-
+    public void checkPostAPI() throws IOException {
         int userid = 0;
-        try {
             // Read JSON from file
             String jsonBody = new String(Files.readAllBytes(Paths.get("src/test/java/datamodel/PostBody.json")));
 
@@ -88,6 +85,7 @@ public class AppTest {
             String updatedJsonBody = objectMapper.writeValueAsString(jsonObject);
 
             var response = given()
+                    .header("Accept", "application/json")
                     .contentType(ContentType.JSON)
                     .auth().oauth2(accessToken)
                     .body(updatedJsonBody)
@@ -101,11 +99,6 @@ public class AppTest {
             System.out.println("----------Post request successful---------");
             System.out.println("POST :New User created with ID: " + userid);
             response.getBody().prettyPrint();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
     }
 
 
@@ -113,12 +106,12 @@ public class AppTest {
     public void checkPutUser() throws IOException {
         // Read JSON from file
         String jsonBody = new String(Files.readAllBytes(Paths.get("src/test/java/datamodel/PutBody.json")));
-        String Userid = "7725317";
+        Integer Userid = 7725783;
 
         var response = given()
+                .header("Content-Type", "application/json")
                 .contentType(ContentType.JSON)
                 .auth().oauth2(accessToken)
-                .body(jsonBody)
                 .when()
                 .put(baseURI + "/users/" + Userid)
                 .then()
@@ -134,6 +127,7 @@ public class AppTest {
     public void checkDeleteUser() throws IOException {
         int user = CreateRandomUserId(); // Create new user to delete
         var response = given()
+                .header("Content-Type", "application/json")
                 .contentType(ContentType.JSON)
                 .auth().oauth2(accessToken)
                 .when()
@@ -154,10 +148,10 @@ public class AppTest {
         System.out.println("Deleted ID : " + user);
     }
 
-    public int CreateRandomUserId() {
+    public int CreateRandomUserId() throws IOException {
 
         int userid = 0;
-        try {
+
             // Read JSON from file
             String jsonBody = new String(Files.readAllBytes(Paths.get("src/test/java/datamodel/PostBody.json")));
 
@@ -172,18 +166,17 @@ public class AppTest {
             String updatedJsonBody = objectMapper.writeValueAsString(jsonObject);
 
             var response = given()
+                    .header("Accept", "application/json")
                     .contentType(ContentType.JSON)
                     .auth().oauth2(accessToken)
                     .body(updatedJsonBody)
                     .when()
                     .post(baseURI + "/users")
                     .then()
-                    .statusCode(201) // Expect success response
+                    .statusCode(201)// Expect success response
                     .extract().response();
             userid = response.jsonPath().getInt("id");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
         return userid;
 
     }
