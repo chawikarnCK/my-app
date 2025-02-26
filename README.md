@@ -29,11 +29,29 @@ cd /path/to/app
 
 This will run the test classes and output the results in the console.
 
-Testcase Description 
-1. checkGetStatusCode : Check Get request status should be 200 (success)
-2. checkContentType : Check ContentType json
-3. checkGetUser : Check data response
-4. checkPostAPI : Check Post request success
-5. checkPutUser : Check update data (status field)
-6. checkDeleteUser : Check Delete request success  
+
+Test case overview
+1. checkGetStatusCode
+    * Sends a GET request to fetch users.
+    * Validates if the status code is 200 (OK).
+2. checkContentType
+    * Ensures the response Content-Type is application/json.
+3. checkGetUser
+    * Fetches users and validates that required fields (name, email, gender, status) are not null.
+4. checkPostAPI
+    * Reads a JSON request body from a json file.
+    * Modifies the email dynamically (to avoid duplicates).
+    * Sends a POST request to create a new user.
+    * Asserts a 201 (Created) response.
+5. checkPutUser
+    * Reads a JSON body from a file.
+    * Sends a PUT request to update a user’s status.
+    * Asserts the status field is updated to "inactive".
+6. checkDeleteUser
+    * Creates a new user dynamically.
+    * Deletes the user and asserts 204 (No Content).
+    * Ensures that retrieving the deleted user returns 404 (Not Found).
+7. CreateRandomUserId (Helper method)
+    * Generates a random user dynamically for DELETE tests.
+    * Ensures email uniqueness by appending a random number.
 
