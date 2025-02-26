@@ -1,0 +1,74 @@
+[
+{
+"id": 7694865,
+"name": "Vishwamitra Butt VM",
+"email": "butt_vishwamitra_vm@kozey-nicolas.test",
+"gender": "male",
+"status": "active"
+},
+{
+"id": 7691391,
+"name": "Vyas Embranthiri",
+"email": "embranthiri_vyas@swaniawski.test",
+"gender": "male",
+"status": "inactive"
+},
+{
+"id": 7691389,
+"name": "Vaijayanti Guha",
+"email": "vaijayanti_guha@collins-hegmann.example",
+"gender": "male",
+"status": "active"
+},
+{
+"id": 7691388,
+"name": "Vishnu Gill",
+"email": "gill_vishnu@conn.example",
+"gender": "male",
+"status": "inactive"
+},
+{
+"id": 7691386,
+"name": "Anilabh Varma IV",
+"email": "varma_anilabh_iv@goyette.example",
+"gender": "female",
+"status": "inactive"
+},
+{
+"id": 7691385,
+"name": "Sher Dutta",
+"email": "dutta_sher@hodkiewicz.test",
+"gender": "female",
+"status": "inactive"
+},
+{
+"id": 7691384,
+"name": "Bhuvanesh Butt",
+"email": "bhuvanesh_butt@ruecker.test",
+"gender": "male",
+"status": "active"
+},
+{
+"id": 7691383,
+"name": "Sen. Bhisham Menon",
+"email": "sen_menon_bhisham@doyle-bergstrom.example",
+"gender": "male",
+"status": "active"
+},
+{
+"id": 7691382,
+"name": "The Hon. Kama Mukhopadhyay",
+"email": "kama_hon_the_mukhopadhyay@gislason.test",
+"gender": "female",
+"status": "active"
+},
+{
+"id": 7691381,
+"name": "Darshwana Pilla",
+"email": "darshwana_pilla@marquardt-fay.test",
+"gender": "male",
+"status": "active"
+}
+]
+
+Process finished with exit code 0
